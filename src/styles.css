@@ -13392,6 +13392,11 @@ button:focus {
     background-attachment: fixed
 }
 
+.vf-body-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+
 .vf-body-wrapper .main-content.bg-fixed-bottom {
     background-size: 100%
 }
@@ -13989,7 +13994,8 @@ button:focus {
 }
 
 .vf-body-wrapper .main-content {
-    margin-left: 250px
+    padding-left: 250px;
+    width: 100%;
 }
 
 @media (min-width:576px) {

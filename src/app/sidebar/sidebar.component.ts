@@ -9,6 +9,11 @@ import { Router } from '@angular/router';
 export class SidebarComponent implements OnInit {
 
   constructor() { }
+  ListClicked = false;
+
+  OnClickLists() {
+      this.ListClicked= !this.ListClicked;
+  }
 
   ngOnInit() {
   }

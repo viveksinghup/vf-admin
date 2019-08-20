@@ -26,26 +26,36 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['../add-product']">
-            <i class="fe fe-home"></i> Add Products
+          <a class="nav-link" data-toggle="collapse" ng-init="isActive = false"
+          (click)="isActive = !isActive">
+            <i class="fe fe-home"></i> Products
           </a>
+          <div class="collapse" [ngClass]="{'show': isActive}" id="products">
+            <ul class="nav nav-sm flex-column">
+              <li class="nav-item">
+                <a href="profile-posts.html" class="nav-link ">
+                  All Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink] = "['../add-product']" class="nav-link ">
+                  Add products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="profile-posts.html" class="nav-link ">
+                  Posts
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink] = "['../dashboard']">
             <i class="fe fe-home"></i> Dashboards
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['../dashboard']">
-            <i class="fe fe-home"></i> Dashboards
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink] = "['../dashboard']">
-            <i class="fe fe-home"></i> Dashboards
-          </a>
-        </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="index.html#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
             <i class="fe fe-file"></i> Pages
           </a>
@@ -289,12 +299,7 @@
               </li>
             </ul>
           </div>
-        </li>
-        <li class="nav-item d-md-none">
-          <a class="nav-link" href="index.html#sidebarModalActivity" data-toggle="modal">
-           <span class="fe fe-bell"></span> Notifications
-          </a>
-        </li>
+        </li> -->
       </ul>
 
       <!-- Divider -->
@@ -309,166 +314,17 @@
       <ul class="navbar-nav mb-md-4">
         <li class="nav-item">
           <a class="nav-link " href="getting-started.html">
-            <i class="fe fe-clipboard"></i> Getting started
+            <i class="fe fe-bell"></i> Notifications
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#sidebarComponents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarComponents">
-            <i class="fe fe-book-open"></i> Components
-          </a>
-          <div class="collapse " id="sidebarComponents">
-            <ul class="nav nav-sm flex-column">
-              <li class="nav-item">
-                <a href="components.html#alerts" class="nav-link">
-                  Alerts
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#autosizePlugin" class="nav-link">
-                  Autosize
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#avatars" class="nav-link">
-                  Avatars
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#badges" class="nav-link">
-                  Badges
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#breadcrumb" class="nav-link">
-                  Breadcrumb
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#buttons" class="nav-link">
-                  Buttons
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#button-group" class="nav-link">
-                  Button group
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#cards" class="nav-link">
-                  Cards
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#charts" class="nav-link">
-                  Charts
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#dropdowns" class="nav-link">
-                  Dropdowns
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#forms" class="nav-link">
-                  Forms
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#icons" class="nav-link">
-                  Icons
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#kanban" class="nav-link">
-                  Kanban
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#lists" class="nav-link">
-                  Lists
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#map" class="nav-link">
-                  Map
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#modal" class="nav-link">
-                  Modal
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#navs" class="nav-link">
-                  Navs
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#navbarExample" class="nav-link">
-                  Navbar
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#page-headers" class="nav-link">
-                  Page headers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#pagination" class="nav-link">
-                  Pagination
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#popovers" class="nav-link">
-                  Popovers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#progress" class="nav-link">
-                  Progress
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#social-posts" class="nav-link">
-                  Social post
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#spinners" class="nav-link">
-                  Spinners
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#tables" class="nav-link">
-                  Tables
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#toasts" class="nav-link">
-                  Toasts
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#tooltips" class="nav-link">
-                  Tooltips
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#typography" class="nav-link">
-                  Typography
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#utilities" class="nav-link">
-                  Utilities
-                </a>
-              </li>
-            </ul>
-          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="changelog.html">
-            <i class="fe fe-git-branch"></i> Changelog <span class="badge badge-primary ml-auto">v1.4.2</span>
+            <i class="fe fe-git-branch"></i> Activity Logs <span class="badge badge-primary ml-auto">v1.4.2</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="changelog.html">
+            <i class="fe fe-user"></i> Settings
           </a>
         </li>
       </ul>
