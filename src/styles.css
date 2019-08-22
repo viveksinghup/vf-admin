@@ -4101,11 +4101,14 @@ input[type=submit].btn-block {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #e3ebf6
+    border-bottom: 1px solid #e3ebf6;
 }
 
 .nav-tabs .nav-item {
-    margin-bottom: -1px
+    margin-bottom: -1px;
+}
+.nav-link{
+    cursor: pointer;
 }
 
 .nav-tabs .nav-link {
