@@ -22,16 +22,10 @@
       <div class="dropdown">
 
         <!-- Toggle -->
-        <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="../../assets/images/avatar.jpg" alt="..." class="avatar-img rounded-circle">
         </a>
-
-        <!-- Menu -->
-        <div class="dropdown-menu dropdown-menu-right">
-          <a href="settings.html" class="dropdown-item">Settings</a>
-          <hr class="dropdown-divider">
-          <a class="dropdown-item" [routerLink] = "['../login']">Logout</a>
-        </div>
+        <a [routerLink] = "['../login']" class="logout-link"><img src="../../assets/images/log-out.svg"></a>
 
       </div>
 

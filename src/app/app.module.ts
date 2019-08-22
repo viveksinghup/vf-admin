@@ -19,6 +19,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { NotificationComponent } from './notification/notification.component';
 import { SettingComponent } from './setting/setting.component';
+import { AlertComponent } from './alert/alert.component';
 
 
 const routes: Routes = [
@@ -50,7 +51,8 @@ const routes: Routes = [
     AddproductComponent,
     AllproductsComponent,
     NotificationComponent,
-    SettingComponent
+    SettingComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
